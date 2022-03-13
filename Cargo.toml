@@ -1,0 +1,23 @@
+[workspace]
+members = [".", "detect-image-core","detect-image-zxing","detect-image-zbar","detect-image-php","examples/zbar","examples/zxing"]
+
+[package]
+name = "detect-image-data"
+version = "0.0.0-beta.1"
+edition = "2021"
+
+
+[dependencies]
+image = "0.24.0"
+detect-image-core = { version = "0.0.0-beta.1", path = "./detect-image-core"}
+detect-image-zbar = { version = "0.0.0-beta.1", path = "./detect-image-zbar",optional = true}
+detect-image-zxing = { version = "0.0.0-beta.1", path = "./detect-image-zxing",optional = true}
+
+
+
+[features]
+default=[
+  
+]
+zbar = ["detect-image-zbar"]
+zxing = ["detect-image-zxing"]

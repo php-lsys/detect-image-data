@@ -1,0 +1,31 @@
+[package]
+name = "detect-image-php"
+version = "0.0.0-beta.1"
+authors = ["liushan <shan.liu@msn.com>"]
+edition = "2021"
+description = "detect image qrcode for php extension"
+repository = "https://github.com/shanliu/detect-image-data"
+license = "Apache-2.0"
+build = "build.rs"
+
+
+[dependencies]
+phper = { version = "0.3.0", git = "https://github.com/jmjoy/phper" }
+detect-image-data = { version = "0.0.0-beta.1", path = "../",features=[]}
+rqrr = "0.5.1"
+image = "0.24.0"
+thiserror = "1.0.24"
+
+[build-dependencies]
+phper-build = { version = "0.3.0",git = "https://github.com/jmjoy/phper"  }
+
+
+[lib]
+crate-type = ["cdylib"]
+
+
+
+[features]
+default=[]
+zbar = ["detect-image-data/zbar"]
+zxing = ["detect-image-data/zxing"]

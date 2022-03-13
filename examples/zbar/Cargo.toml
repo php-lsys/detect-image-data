@@ -1,0 +1,8 @@
+[package]
+name = "dome_zbar"
+version = "0.0.0-beta.1"
+edition = "2021"
+
+[dependencies]
+detect-image-data = { version = "0.0.0-beta.1", path = "../../",features=["zbar"]}
+

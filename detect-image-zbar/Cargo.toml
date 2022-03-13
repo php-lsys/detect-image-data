@@ -1,0 +1,23 @@
+[package]
+name = "detect-image-zbar"
+version = "0.0.0-beta.1"
+authors = ["liushan <shan.liu@msn.com>"]
+edition = "2021"
+description = "port from [zxing-cpp](https://github.com/nu-book/zxing-cpp)"
+repository = "https://github.com/shanliu/detect-image-data"
+license = "Apache-2.0"
+build = "build.rs"
+
+[dependencies]
+libc = "0.2.43"
+image = "0.24.0"
+enum-ordinalize = "3.1.10"
+detect-image-core = { version = "0.0.0-beta.1", path = "../detect-image-core"}
+
+
+
+[dev-dependencies]
+image = "0.24"
+
+[build-dependencies]
+pkg-config = "0.3.14"

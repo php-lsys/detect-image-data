@@ -1,0 +1,7 @@
+[package]
+name = "detect-image-core"
+version = "0.0.0-beta.1"
+authors = ["liushan <shan.liu@msn.com>"]
+edition = "2021"
+
+

@@ -1,0 +1,20 @@
+[package]
+name = "detect-image-zxing"
+version = "0.0.0-beta.1"
+authors = ["liushan <shan.liu@msn.com>"]
+edition = "2021"
+description = "port from [zxing-cpp](https://github.com/nu-book/zxing-cpp)"
+repository = "https://github.com/shanliu/detect-image-data"
+license = "Apache-2.0"
+build = "build.rs"
+
+
+[dependencies]
+image = "0.24.0"
+detect-image-core = { version = "0.0.0-beta.1", path = "../detect-image-core"}
+
+
+[build-dependencies]
+cc = "1.0.73"
+pkg-config = "0.3.14"
+glob="0.3"
