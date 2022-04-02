@@ -7,7 +7,4 @@
 
 ## php 扩展方式进行 zbar zxing quirc 库封装
 
-> 参考使用示例: ./detect-image-php
->
-> 不确定是否稳定，用的phper crate感觉有坑，打算有空自己在封装一个
-
+> 参考使用示例: ./detect-image-php [仅供尝试使用，不建议用于生产]
